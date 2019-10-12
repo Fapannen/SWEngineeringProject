@@ -1,0 +1,16 @@
+USE CASE ID         - DOPLNIT
+Brief description   - Registrovany uzivatel muze odeslat navrh prezentace ke schvaleni programovym tymem. Uzivatele v navrhu, kteri jeste nejsou registrovani v systemu automaticky obdrzi pozvanku (Poslat notifikaci) 
+Primary actors      - Registrovany uzivatel
+Secondary actors    - Neregistrovani autori
+Preconditions       - Uzivatel je regsitrovany
+Main flow of events - 1. Pripad uziti zacina, kdyz registrovany uzivatel v systemu klikne na tlacitko Pridat prezentaci.
+                      2. System zobrazi formular pro pridani prezentace.
+                      3. Uzivatel vyplni seznam autoru, nazev prezentace, anotaci, klicova slova a vybere kategorii a sekci konference.
+                      4. System ulozi vyplneny formular do seznamu navrhu prezentaci.
+                      5. System posle notifikaci o novem navrhu prezentace clenum komise.
+		      6. System zkontroluje, zda jsou vsichni clenove seznamu autoru registrovani uzivatele.
+                      6.1. IF autor neni registrovany uzivatel
+                      6.1.1 System odesle neregistrovanym autorum pozvanku k registraci.
+                      7. System zobrazi uzivateli potvrzeni o uspesnem vlozeni navrhu.
+Alternative flows   -
+Post conditions     - Novy navrh je v systemu, autori a clenove komise obdrzeli notifikaci o pridani noveho navrhu.
